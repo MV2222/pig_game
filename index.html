@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="shortcut icon" type="image/png" href="./s-logo white.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body class="htmlbody">
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current Score</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current Score</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer__signature">
+      <p class="footer__copyright">
+        &copy;
+        <img src="./s-logo white.png" alt="" class="footer__logo" />
+        Mahadev Prasad Pal
+      </p>
+    </footer>
+
+    <!-- RULES OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- RULES TAB -->
+    <aside class="rules__container hidden">
+      <div class="rules">
+        <h2 class="rules__heading">RULES FOR THE GAME</h2>
+        <div class="rules__description">
+          <div class="btn__list">
+            <ul class="btn__functionality">
+              <li>🔄 New game: Start a new Game</li>
+              <li>🎲 Roll dice: Roll the dice to get score</li>
+              <li>📥 Hold: Hold your current dice roll score</li>
+            </ul>
+          </div>
+          <div class="game_rule">
+            <p>
+              You can roll the dice multiple times untill you get a 1. The
+              players will get switched at the moment a player gets 1 as the
+              current dice roll value. The dice value will keep on adding to
+              hold that value as your current score. The player who reaches 100
+              score first will win.
+            </p>
+          </div>
+        </div>
+        <button class="btn--acknowledge">✅ Understood</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
